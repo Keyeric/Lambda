@@ -117,6 +117,7 @@ nav a:hover {
 .top h1 a {
   text-decoration: none;
   color: white;
+  font-size: 2rem;
   text-shadow: 0.1rem 0.1rem #990000;
 }
 h6 {
@@ -127,6 +128,10 @@ h6 {
   background-image: linear-gradient(#2F2F31, #990000);
   padding: 5%;
   padding-bottom: 5rem;
+}
+
+h2{
+  text-decoration: underline;
 }
 .Blog {
   background-color: #990000;
@@ -158,10 +163,25 @@ h6 {
     flex-direction: column;
   }
 }
+@media (max-width: 500px){
+  .Symphinity {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 500px){
+  .Symphinity .Lesson{
+    font-size: 1.2rem;
+  }
+}
 .Media {
   padding-top: 2rem;
   background-color: #990000;
   padding-bottom: 3rem;
+}
+@media (max-width: 500px){
+  .Media h2{
+  font-size: 1.9rem;
+  }
 }
 .Social {
   display: flex;
@@ -174,6 +194,7 @@ h6 {
   color: black;
   font-size: 3rem;
   margin: 2rem;
+  
 }
 @media (max-width: 1400px) {
   .Social a {
@@ -182,7 +203,10 @@ h6 {
 }
 @media (max-width: 500px) {
   .Social a {
-    padding: 3rem;
+    padding: -3rem;
+    font-size: 2.3rem;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 @media (max-width: 1400px) {
@@ -204,12 +228,12 @@ address a {
   text-decoration: none;
 }
 @media (max-width: 1400px) {
-  address {
-    font-size: 2rem;
+  address a{
+    font-size: 1.5rem;
   }
 }
 @media (max-width: 500px) {
-  address {
-    font-size: 2rem;
+  address a{
+    font-size: 1.2rem;
   }
 }
