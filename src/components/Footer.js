@@ -1,15 +1,14 @@
 import React from "react";
-import {Link} from "react-router-dom";
 
 export default function Footer(){
     return(
         <footer>
             <address>
 
-                <Link to="mailto: keyeric.bristol@gmail.com">keyeric.bristol@gmail.com</Link>
+                <a href="mailto: keyeric.bristol@gmail.com">keyeric.bristol@gmail.com</a>
                 <br />
 
-                <Link to="tel:(240) 528-0810">(240) 528-0810</Link>
+                <a href="tel:(240) 528-0810">(240) 528-0810</a>
                 <br />
 
                 Rockville, Maryland, USA

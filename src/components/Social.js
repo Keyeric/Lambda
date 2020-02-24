@@ -1,5 +1,4 @@
 import React from "react";
-import {Link} from "react-router-dom";
 
 export default function Social(){
     return(
@@ -7,22 +6,22 @@ export default function Social(){
 
             {/* GitHub here */}
             <div>
-                <Link to="https://github.com/Keyeric?tab=repositories" target="_blank" className="fab fa-github-square">GitHub</Link>
+                <a href="https://github.com/Keyeric?tab=repositories" target="_blank" rel="noopener noreferrer" className="fab fa-github-square">GitHub</a>
             </div>
 
             {/* LinkedIn here */}
             <div>
-                <Link to="https://linkedin.com/in/Keyeric/" target="_blank" className="fab fa-linkedin">LinkedIn</Link>
+                <a href="https://linkedin.com/in/Keyeric/" target="_blank" rel="noopener noreferrer" className="fab fa-linkedin">LinkedIn</a>
             </div>
 
             {/* YouTube here */}
             <div>
-                <Link to="https://youtube.com/c/GothKazu" target="_blank" className="fab fa-youtube">YouTube</Link>
+                <a href="https://youtube.com/c/GothKazu" target="_blank" rel="noopener noreferrer" className="fab fa-youtube">YouTube</a>
             </div>
 
             {/* Medium here */}
             <div>
-                <Link to="https://medium.com/@keyeric" target="_blank" className="fab fa-medium">Medium</Link>
+                <a href="https://medium.com/@keyeric" target="_blank" rel="noopener noreferrer" className="fab fa-medium">Medium</a>
             </div>
                 
         </section>
