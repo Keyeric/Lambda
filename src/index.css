@@ -7,6 +7,7 @@
   vertical-align: baseline;
   text-align: center;
 }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -21,53 +22,68 @@ nav,
 section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 blockquote,
 q {
   quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 @font-face {
-  font-family: 'Josefin Sans';
+  font-family: "Josefin Sans";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Josefin Sans Regular'), local('JosefinSans-Regular'), url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3aZQNVED7rKGKxtqIqX5EUDXx9.ttf) format('truetype');
+  src: local("Josefin Sans Regular"), local("JosefinSans-Regular"),
+    url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3aZQNVED7rKGKxtqIqX5EUDXx9.ttf)
+      format("truetype");
 }
+
 @font-face {
-  font-family: 'Solway';
+  font-family: "Solway";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Solway Regular'), local('Solway-Regular'), url(https://fonts.gstatic.com/s/solway/v2/AMOQz46Cs2uTAOCmhXo5.ttf) format('truetype');
+  src: local("Solway Regular"), local("Solway-Regular"),
+    url(https://fonts.gstatic.com/s/solway/v2/AMOQz46Cs2uTAOCmhXo5.ttf)
+      format("truetype");
 }
+
 html {
   font-size: 62.5%;
   font-family: "Josefin Sans", sans-serif;
   max-width: 100%;
 }
+
 html,
 body {
+  box-sizing: border-box;
   font-size: 1.6rem;
   font-family: "Josefin Sans", sans-serif;
-  background-color: #2F2F31;
+  background-color: #2f2f31;
 }
+
 h1,
 h2,
 h3,
@@ -77,11 +93,13 @@ h5 {
   letter-spacing: 0.1rem;
   margin-bottom: 1.5rem;
 }
+
 .menu-button {
   position: absolute;
   left: 0.2rem;
   cursor: pointer;
 }
+
 .menu {
   display: none;
   position: fixed;
@@ -89,11 +107,12 @@ h5 {
   left: 0;
   width: 15rem;
   height: 30rem;
-  background-color: #2F2F31;
+  background-color: #2f2f31;
   border: 0.5rem solid black;
   border-left: none;
   z-index: 2;
 }
+
 .menu nav a {
   display: block;
   width: 100%;
@@ -101,42 +120,51 @@ h5 {
   padding: 1rem 0;
   text-align: center;
 }
+
 .menu--open {
   display: block;
 }
+
 nav {
   margin: 0.1%;
 }
+
 nav a {
   text-decoration: none;
   color: black;
 }
+
 nav a:hover {
   color: #990000;
 }
+
 .top h1 a {
   text-decoration: none;
   color: white;
   text-shadow: 0.1rem 0.1rem #990000;
 }
-@media (max-width: 500px){
+
+@media (max-width: 500px) {
   .top h1 a {
-  font-size: 2rem;
+    font-size: 2rem;
   }
 }
+
 h6 {
   font-size: 0.2rem;
 }
+
 .About {
   margin-top: 3%;
-  background-image: linear-gradient(#2F2F31, #990000);
+  background-image: linear-gradient(#2f2f31, #990000);
   padding: 5%;
   padding-bottom: 5rem;
 }
 
-h2{
+h2 {
   text-decoration: underline;
 }
+
 .Blog {
   background-color: #990000;
   border-top: 0.3rem solid black;
@@ -148,6 +176,7 @@ h2{
   align-items: center;
   flex-direction: column;
 }
+
 .Symphinity {
   display: flex;
   justify-content: center;
@@ -155,56 +184,84 @@ h2{
   flex-direction: row;
   border-radius: 5rem;
 }
+
 .Text {
   width: 80%;
 }
+
 .Lesson {
   font-size: 2rem;
-  color: blue;
+  color: #e48400;
 }
+
 @media (max-width: 1400px) {
   .Symphinity {
     flex-direction: column;
   }
 }
-@media (max-width: 500px){
+
+@media (max-width: 500px) {
   .Symphinity {
     font-size: 1rem;
   }
 }
-@media (max-width: 500px){
-  .Symphinity .Lesson{
+
+@media (max-width: 500px) {
+  .Symphinity .Lesson {
     font-size: 1.2rem;
   }
 }
+
 .Media {
-  padding-top: 2rem;
+  padding-top: 1rem;
   background-color: #990000;
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
 }
-@media (max-width: 500px){
-  .Media h2{
-  font-size: 1.9rem;
+
+@media (max-width: 500px) {
+  .Media h2 {
+    font-size: 1.9rem;
   }
 }
+
 .Social {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
 }
+
 .Social a {
   text-decoration: none;
   color: black;
   font-size: 3rem;
   margin: 2rem;
-  
 }
+
 @media (max-width: 1400px) {
   .Social a {
     padding: 2rem;
   }
 }
+
+@media (max-width: 1400px) {
+  .Social div {
+    margin: 2rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .Social {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .Social {
+    display: none;
+  }
+}
+
 @media (max-width: 500px) {
   .Social a {
     padding: -3rem;
@@ -213,31 +270,58 @@ h2{
     margin-right: 0;
   }
 }
-@media (max-width: 1400px) {
-  .Social div {
-    margin: 2rem;
+
+.Icons {
+  display: none;
+}
+
+.Icons div a span {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .Icons {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
   }
 }
-@media (max-width: 1400px) {
-  .Social {
-    flex-direction: column;
+
+@media (max-width: 500px) {
+  .Icons div {
+    max-width: 100%;
+    width: 50%;
+    margin: 1.5rem 1.5rem;
   }
 }
-address{
+
+@media (max-width: 500px) {
+  .Icons a {
+    max-width: 100%;
+    font-size: 3rem;
+    padding: 1px;
+    margin: 0;
+  }
+}
+
+address {
   font-size: 1rem;
   padding-top: 5rem;
-  background-image: linear-gradient(#990000, #2F2F31);
+  background-image: linear-gradient(#990000, #2f2f31);
 }
+
 address a {
   text-decoration: none;
+  color: black;
 }
+
 @media (max-width: 1400px) {
-  address a{
+  address a {
     font-size: 1.5rem;
   }
 }
 @media (max-width: 500px) {
-  address a{
+  address a {
     font-size: 1.2rem;
   }
 }
