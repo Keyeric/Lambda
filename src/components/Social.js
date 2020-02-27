@@ -48,7 +48,7 @@ export default function Social() {
             rel="noopener noreferrer"
             className="fab fa-medium"
           >
-            Medium
+            edium
           </a>
         </div>
       </section>
