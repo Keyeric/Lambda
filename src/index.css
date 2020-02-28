@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -6,6 +9,7 @@
   max-width: 100%;
   vertical-align: baseline;
   text-align: center;
+  font-size: 62.5%;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -50,29 +54,9 @@ table {
   border-spacing: 0;
 }
 
-@font-face {
-  font-family: "Josefin Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local("Josefin Sans Regular"), local("JosefinSans-Regular"),
-    url(https://fonts.gstatic.com/s/josefinsans/v14/Qw3aZQNVED7rKGKxtqIqX5EUDXx9.ttf)
-      format("truetype");
-}
-
-@font-face {
-  font-family: "Solway";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local("Solway Regular"), local("Solway-Regular"),
-    url(https://fonts.gstatic.com/s/solway/v2/AMOQz46Cs2uTAOCmhXo5.ttf)
-      format("truetype");
-}
-
 html {
   font-size: 62.5%;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Roboto", serif;
   max-width: 100%;
 }
 
@@ -80,7 +64,7 @@ html,
 body {
   box-sizing: border-box;
   font-size: 1.6rem;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Roboto", serif;
   background-color: #2f2f31;
 }
 
@@ -89,40 +73,9 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Solway", serif;
+  font-family: "Roboto", serif;
   letter-spacing: 0.1rem;
   margin-bottom: 1.5rem;
-}
-
-.menu-button {
-  position: absolute;
-  left: 0.2rem;
-  cursor: pointer;
-}
-
-.menu {
-  display: none;
-  position: fixed;
-  top: 2rem;
-  left: 0;
-  width: 15rem;
-  height: 30rem;
-  background-color: #2f2f31;
-  border: 0.5rem solid black;
-  border-left: none;
-  z-index: 2;
-}
-
-.menu nav a {
-  display: block;
-  width: 100%;
-  font-size: 1.5rem;
-  padding: 1rem 0;
-  text-align: center;
-}
-
-.menu--open {
-  display: block;
 }
 
 nav {
@@ -154,15 +107,8 @@ h6 {
   font-size: 0.2rem;
 }
 
-.About {
-  margin-top: 3%;
-  background-image: linear-gradient(#2f2f31, #990000);
-  padding: 5%;
-  padding-bottom: 5rem;
-}
-
-h2 {
-  text-decoration: underline;
+.MuiPaper-root .MuiCard-root .Text .MuiPaper-outlined .MuiPaper-rounded {
+  border-radius: 200%;
 }
 
 .Blog {
@@ -175,6 +121,8 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  color: #fff8f0;
+  text-shadow: 0.1rem 0.1rem #53131e;
 }
 
 .Symphinity {
@@ -192,6 +140,7 @@ h2 {
 .Lesson {
   font-size: 2rem;
   color: #e48400;
+  text-shadow: 0.05rem 0.05rem #fff8f0;
 }
 
 @media (max-width: 1400px) {
@@ -234,6 +183,7 @@ h2 {
 .Social a {
   text-decoration: none;
   color: black;
+  text-shadow: 0.05rem 0.05rem #fff8f0;
   font-size: 3rem;
   margin: 2rem;
 }

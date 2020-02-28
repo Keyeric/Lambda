@@ -1,13 +1,28 @@
-import React from 'react';
-import Text from './Text';
-import {Card} from "reactstrap";
+import React from "react";
+import Text from "./Text";
+import Typography from "@material-ui/core/Typography";
+// import { makeStyles } from "@material-ui/core/styles";
 
-export default function Blog(){
-    return(
-        <Card className ="Blog">
-            <br />
-            <h2>Blog</h2>
-            <Text />
-        </Card>
-    );
+// const useStyles = makeStyles({ blog: {} });
+
+export default function Blog() {
+  // const classes = useStyles();
+  return (
+    <div className="Blog">
+      <br />
+      <Typography
+        variant="h2"
+        style={{
+          textDecoration: "underline",
+          color: "#fff8f0",
+          textShadow: "0.1rem 0.1rem #53131e",
+          fontSize: "2rem",
+          marginBottom: "1.5rem"
+        }}
+      >
+        Blog
+      </Typography>
+      <Text />
+    </div>
+  );
 }

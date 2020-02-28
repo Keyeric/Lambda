@@ -1,14 +1,39 @@
-import React from 'react';
+import React from "react";
+import Typography from "@material-ui/core/Typography";
+import { makeStyles } from "@material-ui/core/styles";
 
-export default function About(){
-    return(
-        <section className="About">
-            <h2>About Me</h2>
-            <p>
-                I am new to coding however i find it enjoyable and am eager to learn
-                more. I am currently enrolled in Lambda School and working on many
-                projects for my portfolio.
-            </p>
-        </section>
-    );
+const useStyles = makeStyles({
+  about: {
+    marginTop: "3%",
+    backgroundImage: "linear-gradient(#2f2f31, #990000)",
+    padding: "5%",
+    paddingBottom: "5rem",
+    color: "#fff8f0",
+    textShadow: "0.1rem 0.1rem #53131e"
+  }
+});
+
+export default function About() {
+  const classes = useStyles();
+  return (
+    <section className={classes.about}>
+      <Typography
+        variant="h2"
+        style={{
+          textDecoration: "underline",
+          color: "#fff8f0",
+          textShadow: "0.1rem 0.1rem #53131e",
+          fontSize: "2rem",
+          marginBottom: "1.5rem"
+        }}
+      >
+        About Me
+      </Typography>
+      <Typography variant="body1">
+        I am new to coding however i find it enjoyable and am eager to learn
+        more. I am currently enrolled in Lambda School and working on many
+        projects for my portfolio.
+      </Typography>
+    </section>
+  );
 }
