@@ -49,6 +49,11 @@ const useStyles = makeStyles({
         margin: "1.5rem 1.5rem"
       },
       "& a": {
+        textDecoration: "none",
+        color: "black",
+        textShadow: "0.05rem 0.05rem #fff8f0",
+        fontSize: "3rem",
+        margin: "auto",
         ["@media (max-width: 600px)"]: {
           maxWidth: "100%",
           fontSize: "3rem",
