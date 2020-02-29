@@ -35,7 +35,7 @@ export default function Blog() {
   return (
     <div className={classes.blog}>
       <br />
-      <Typography variant="h2">Blog</Typography>
+      <Typography variant="h2">Projects</Typography>
       <Text />
     </div>
   );

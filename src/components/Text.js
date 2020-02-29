@@ -16,7 +16,7 @@ import Lesson from "./Lesson";
 const useStyles = makeStyles(theme => ({
   text: {
     fontSize: "1.4rem",
-    maxWidth: "80%",
+    maxWidth: "75%",
     background: "black",
     padding: "3%",
     "& span": {
@@ -57,14 +57,6 @@ const useStyles = makeStyles(theme => ({
   },
   expandOpen: {
     transform: "rotate(180deg)"
-  },
-  media: {
-    height: 0,
-    paddingTop: "23%"
-  },
-  media2: {
-    height: 25,
-    paddingTop: "100%"
   }
 }));
 
@@ -79,14 +71,12 @@ export default function Text() {
     <Card className={classes.text}>
       <CardHeader
         // <Typography variant="h4">
-        // </Typography>
         title="Build Week 1:"
+        // </Typography>
       />
-      <CardMedia
-        className={classes.media}
-        image="../images/SymphinityBanner.png"
-        title="Symphinity"
-      />
+      <CardMedia>
+        <img src="../images/SymphinityBanner.png" alt="Symphinity" />
+      </CardMedia>
       <CardContent className={classes.symphinity}>
         <Typography variant="body1">
           I originally wanted to write this on a blog (Medium account linked
@@ -98,16 +88,6 @@ export default function Text() {
         </Typography>
       </CardContent>
 
-      <IconButton
-        className={clsx(classes.expand, {
-          [classes.expandOpen]: expanded
-        })}
-        onClick={handleExpandClick}
-        aria-expanded={expanded}
-        aria-label="show more"
-      >
-        <ExpandMoreIcon />
-      </IconButton>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent className={classes.symphinity}>
           <Typography variant="body1">
@@ -158,6 +138,16 @@ export default function Text() {
           </CardMedia>
         </CardContent>
       </Collapse>
+      <IconButton
+        className={clsx(classes.expand, {
+          [classes.expandOpen]: expanded
+        })}
+        onClick={handleExpandClick}
+        aria-expanded={expanded}
+        aria-label="show more"
+      >
+        <ExpandMoreIcon />
+      </IconButton>
     </Card>
   );
 }
