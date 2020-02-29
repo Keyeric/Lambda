@@ -19,10 +19,10 @@ const useStyles = makeStyles(theme => ({
     background: "black",
     padding: "3%",
     "& span": {
-      fontSize: "1.4rem",
+      fontSize: "2.4rem",
       color: "#fff8f0",
       ["@media (max-width: 600px)"]: {
-        fontSize: "1.3rem"
+        fontSize: "1.1rem"
       }
     }
   },
@@ -151,6 +151,9 @@ export default function Text() {
       >
         <ExpandMoreIcon />
       </IconButton>
+      {/* <div>
+        <h2> MORE PROJECTS COMING SOON!</h2>
+      </div> */}
     </Card>
   );
 }
