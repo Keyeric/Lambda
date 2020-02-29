@@ -15,12 +15,15 @@ import Lesson from "./Lesson";
 
 const useStyles = makeStyles(theme => ({
   text: {
-    fontSize: "1.4rem",
     maxWidth: "75%",
     background: "black",
     padding: "3%",
     "& span": {
-      color: "#fff8f0"
+      fontSize: "1.4rem",
+      color: "#fff8f0",
+      ["@media (max-width: 600px)"]: {
+        fontSize: "1.3rem"
+      }
     }
   },
   symphinity: {

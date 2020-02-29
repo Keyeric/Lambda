@@ -24,15 +24,14 @@ export default function Footer() {
   return (
     <footer>
       <address className={classes.address}>
+        <br />
         <a href="mailto: keyeric.bristol@gmail.com">
-          keyeric.bristol@gmail.com
+          Click here to contact me!
         </a>
         <br />
-        <a href="tel:(240) 528-0810">(240) 528-0810</a>
-        <br />
         Phoenix, Arizona
-        <br /> USA
         <br />
+        <a href="tel:(240) 528-0810">(240) 528-0810</a>
       </address>
     </footer>
   );
