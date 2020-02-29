@@ -1,14 +1,75 @@
 import React from "react";
-// import Typography from "@material-ui/core/Typography";
-// import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 
-// const useStyles = makeStyles({ root: {} });
+const useStyles = makeStyles({
+  social: {
+    display: "flex",
+    justifyContent: "space-around",
+    flexDirection: "row",
+    margin: "auto",
+    padding: "auto",
+    ["@media (max-width: 1280px)"]: {
+      flexDirection: "column",
+      justifyContent: "space-around"
+    },
+    ["@media (max-width: 600px)"]: {
+      display: "none"
+    },
+    "& div": {
+      margin: "0.5rem 0",
+      ["@media (max-width: 1280px)"]: {
+        fontSize: "1.5rem"
+      }
+    },
+    "& a": {
+      textDecoration: "none",
+      color: "black",
+      textShadow: "0.05rem 0.05rem #fff8f0",
+      fontSize: "3rem",
+      margin: "auto",
+      ["@media (max-width: 600px)"]: {
+        padding: "-3rem",
+        fontSize: "2.3rem",
+        marginLeft: "0",
+        marginRight: "0"
+      }
+    }
+  },
+  icons: {
+    display: "none",
+    ["@media (max-width: 600px)"]: {
+      display: "flex",
+      flexDirection: "row",
+      maxWidth: "100%"
+    },
+    "& div": {
+      ["@media (max-width: 600px)"]: {
+        maxWidth: "100%",
+        width: "50%",
+        margin: "1.5rem 1.5rem"
+      },
+      "& a": {
+        ["@media (max-width: 600px)"]: {
+          maxWidth: "100%",
+          fontSize: "3rem",
+          //⬇DOUBLE CHECK THIS LATER
+          padding: "0.1rem",
+          //⬆DOUBLE CHECK THIS LATER
+          margin: "0"
+        },
+        "& span": {
+          display: "none"
+        }
+      }
+    }
+  }
+});
 
 export default function Social() {
-  // const classes = useStyles();
+  const classes = useStyles();
   return (
     <section>
-      <section className="Social">
+      <section className={classes.social}>
         {/* GitHub here */}
         <div>
           <a
@@ -58,7 +119,7 @@ export default function Social() {
         </div>
       </section>
 
-      <section className="Social Icons">
+      <section className={classes.icons}>
         <div>
           {/* GitHub here */}
           <div>

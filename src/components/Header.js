@@ -8,14 +8,12 @@ const useStyles = makeStyles({
     "& a": {
       color: "white",
       textDecoration: "none",
-      letterSpacing: "0.1rem",
-      margin: "150px",
-      padding: "10px",
-      fontSize: "3rem",
-      ["@media (max-width: 500px)"]: {
-        fontSize: "2rem",
-        margin: "0",
-        padding: "0"
+      fontSize: "4rem",
+      ["@media (max-width: 960px)"]: {
+        fontSize: "3.5rem"
+      },
+      ["@media (max-width: 600px)"]: {
+        fontSize: "3rem"
       }
     }
   }
@@ -27,7 +25,7 @@ export default function Header() {
     <header className={classes.top}>
       {/* Beginning of the site */}
       <br />
-      <Typography varaint="h1">
+      <Typography variant="h1">
         <a href="https://keyeric.com">Welcome</a>
       </Typography>
     </header>

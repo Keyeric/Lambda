@@ -107,10 +107,6 @@ h6 {
   font-size: 0.2rem;
 }
 
-.MuiPaper-root .MuiCard-root .Text .MuiPaper-outlined .MuiPaper-rounded {
-  border-radius: 200%;
-}
-
 .Blog {
   background-color: #990000;
   border-top: 0.3rem solid black;

@@ -2,24 +2,47 @@ import React from "react";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
-// import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import Lesson from "./Lesson";
 
-// const useStyles = makeStyles({ text: {}, symphinity: {} });
+const useStyles = makeStyles({
+  text: {
+    width: "80%",
+    background: "black",
+    padding: "3%"
+  },
+  symphinity: {
+    color: "#fff8f0",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    flexDirection: "column",
+    borderRadius: "5rem",
+    ["@media (max-width: 1280px)"]: {
+      flexDirection: "column"
+    },
+    ["@media (max-width: 600px)"]: {
+      fontSize: "1rem"
+    },
+    "& h4": {
+      fontSize: "2rem"
+    },
+    "& p": {
+      ["@media (max-width: 960px)"]: {
+        fontSize: "0.9rem"
+      },
+      ["@media (max-width: 600px)"]: {
+        fontSize: "0.6rem"
+      }
+    }
+  }
+});
 
 export default function Text() {
-  // const classes = useStyles();
+  const classes = useStyles();
   return (
-    <Card
-      variant="outlined"
-      style={{
-        background: "black",
-        borderRadius: "borderRadius",
-        padding: "10%"
-      }}
-      className="Text"
-    >
-      <CardContent style={{ color: "#fff8f0" }} className="Symphinity">
+    <Card variant="outlined" className={classes.text}>
+      <CardContent className={classes.symphinity}>
         <Typography variant="h4">
           Build Week 1:
           <br />

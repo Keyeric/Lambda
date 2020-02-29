@@ -1,14 +1,29 @@
 import React from "react";
-// import Typography from "@material-ui/core/Typography";
-// import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 
-// const useStyles = makeStyles({ root: {} });
+const useStyles = makeStyles({
+  address: {
+    fontSize: "0.6rem",
+    paddingTop: "5rem",
+    backgroundImage: "linear - gradient(#990000, #2f2f31)",
+    "& a": {
+      textDecoration: "none",
+      color: "black",
+      ["@media (max-width: 1280px)"]: {
+        fontSize: "1.2rem"
+      },
+      ["@media (max-width: 600px)"]: {
+        fontSize: "1rem"
+      }
+    }
+  }
+});
 
 export default function Footer() {
-  // const classes = useStyles();
+  const classes = useStyles();
   return (
     <footer>
-      <address>
+      <address className={classes.address}>
         <a href="mailto: keyeric.bristol@gmail.com">
           keyeric.bristol@gmail.com
         </a>
