@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography } from "@material-ui/core/";
+import { Typography, useMediaQuery } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
@@ -11,16 +11,15 @@ const useStyles = makeStyles({
       letterSpacing: "0.1rem",
       margin: "150px",
       padding: "10px",
-      fontSize: "3rem"
+      fontSize: "3rem",
+      ["@media (max-width: 500px)"]: {
+        fontSize: "2rem",
+        margin: "0",
+        padding: "0"
+      }
     }
   }
 });
-
-// @media (max-width: 500px) {
-//    {
-//     font-size: 2rem;
-//   }
-// }
 
 export default function Header() {
   const classes = useStyles();
