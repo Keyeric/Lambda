@@ -25,7 +25,7 @@ const useStyles = makeStyles({
       fontSize: "1rem"
     },
     "& h4": {
-      fontSize: "2rem"
+      fontSize: "1.4rem"
     },
     "& p": {
       ["@media (max-width: 960px)"]: {
@@ -51,9 +51,9 @@ export default function Text() {
 
         <Typography variant="body1">
           I originally wanted to write this on a blog (Medium account linked
-          below), however I did not have a blog at the time, and when i created
-          one, it was a bit late to write in the same manner i would've
-          preffered to.
+          below), however I did not have a blog at the time, and when I created
+          one, it was a bit late to write in the same manner that I would've
+          preferred to.
           <br />
           Future blog posts will be posted to Medium and then linked here.
         </Typography>
@@ -61,8 +61,8 @@ export default function Text() {
         <br />
 
         <Typography variant="body1">
-          For my first build week i was tasked with creating an about page from
-          scratch for the "Spotify Song Suggester" project. At first i had
+          For my first build week I was tasked with creating an about page from
+          scratch for the "Spotify Song Suggester" project. At first I had
           significant difficulty with this request due to not having a design
           file or example. However all my troubles were all in my head.
         </Typography>
@@ -72,8 +72,8 @@ export default function Text() {
         <Typography variant="body1">
           Before I even began working, I had already decided that I was so bad
           at design that this would be a train wreck. It took me a few hours to
-          realize that even though design isnt my best area, doing nothing would
-          be worse as a failing grade is the worst case scenario.
+          realize that even though design isn't my best area, doing nothing
+          would be worse as a failing grade is the worst case scenario.
         </Typography>
 
         <br />
@@ -90,7 +90,7 @@ export default function Text() {
 
         <Typography variant="body1">
           Our Project Lead Andre and our single Back End developer Daniel were
-          the only ones of their titles and i could not stand it. I don't have
+          the only ones of their titles and I could not stand it. I don't have
           OCD but I've picked up tendencies from the many people in my life who
           do.
         </Typography>
@@ -98,11 +98,11 @@ export default function Text() {
         <br />
 
         <Typography variant="body1">
-          So I tried my BEST to get those two on their on rows at all display
-          sizes. I tried many things that i won't get into too many details for,
-          due to the non-programming audience. Just know that i spent at least 6
+          So I tried my BEST to get those two on their own rows at all display
+          sizes. I tried many things that I won't get into too many details for,
+          due to the non-programming audience. Just know that I spent at least 6
           hours on this one effect. While it may not be glamorous or
-          extravagent, its mine and it got me an A+ on my portion of the grade.
+          extravagant, its mine and it got me an A+ on my portion of the grade.
         </Typography>
 
         <br />

@@ -3,9 +3,9 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
   address: {
-    fontSize: "0.6rem",
+    fontSize: "0.9rem",
     paddingTop: "5rem",
-    backgroundImage: "linear - gradient(#990000, #2f2f31)",
+    backgroundImage: "linear-gradient(#990000, #2f2f31)",
     "& a": {
       textDecoration: "none",
       color: "black",
