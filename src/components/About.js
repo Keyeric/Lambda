@@ -9,7 +9,22 @@ const useStyles = makeStyles({
     padding: "5%",
     paddingBottom: "5rem",
     color: "#fff8f0",
-    textShadow: "0.1rem 0.1rem #53131e"
+    textShadow: "0.1rem 0.1rem #53131e",
+    "& h2": {
+      textDecoration: "underline",
+      color: "#fff8f0",
+      textShadow: "0.1rem 0.1rem #53131e",
+      fontSize: "2rem",
+      marginBottom: "1.5rem",
+      ["@media (max-width: 600px)"]: {
+        fontSize: "1.5rem"
+      }
+    },
+    "& p": {
+      ["@media (max-width: 600px)"]: {
+        fontSize: "0.8rem"
+      }
+    }
   }
 });
 
@@ -17,21 +32,11 @@ export default function About() {
   const classes = useStyles();
   return (
     <section className={classes.about}>
-      <Typography
-        variant="h2"
-        style={{
-          textDecoration: "underline",
-          color: "#fff8f0",
-          textShadow: "0.1rem 0.1rem #53131e",
-          fontSize: "2rem",
-          marginBottom: "1.5rem"
-        }}
-      >
-        About Me
-      </Typography>
+      <Typography variant="h2">About Me</Typography>
       <Typography variant="body1">
         I am new to coding however i find it enjoyable and am eager to learn
-        more. I am currently enrolled in Lambda School and working on many
+        more.
+        <br />I am currently enrolled in Lambda School and working on many
         projects for my portfolio.
       </Typography>
     </section>

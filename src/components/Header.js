@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography } from "@material-ui/core/";
+import { Typography, useMediaQuery } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
@@ -8,19 +8,16 @@ const useStyles = makeStyles({
     "& a": {
       color: "white",
       textDecoration: "none",
-      letterSpacing: "0.1rem",
-      margin: "150px",
-      padding: "10px",
-      fontSize: "3rem"
+      fontSize: "4rem",
+      ["@media (max-width: 960px)"]: {
+        fontSize: "3.5rem"
+      },
+      ["@media (max-width: 600px)"]: {
+        fontSize: "3rem"
+      }
     }
   }
 });
-
-// @media (max-width: 500px) {
-//    {
-//     font-size: 2rem;
-//   }
-// }
 
 export default function Header() {
   const classes = useStyles();
@@ -28,7 +25,7 @@ export default function Header() {
     <header className={classes.top}>
       {/* Beginning of the site */}
       <br />
-      <Typography varaint="h1">
+      <Typography variant="h1">
         <a href="https://keyeric.com">Welcome</a>
       </Typography>
     </header>
