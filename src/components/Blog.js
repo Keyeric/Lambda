@@ -12,10 +12,10 @@ const useStyles = makeStyles({
     paddingBottom: "5rem",
     display: "flex",
     flexDirection: "column",
-    flexWrap: "nowrap",
-    justifyContent: "center",
+    // flexWrap: "nowrap",
+    // justifyContent: "center",
     alignItems: "center",
-    color: "#fff8f0",
+    // color: "#fff8f0",
     textShadow: "0.1rem 0.1rem #53131e",
     "& h2": {
       textDecoration: "underline",
