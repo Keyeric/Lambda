@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   address: {
     fontSize: "0.9rem",
     paddingTop: "1rem",
@@ -9,15 +9,15 @@ const useStyles = makeStyles({
     "& a": {
       textDecoration: "none",
       color: "black",
-      ["@media (max-width: 1280px)"]: {
+      [theme.breakpoints.down("lg")]: {
         fontSize: "1.2rem"
       },
-      ["@media (max-width: 600px)"]: {
+      [theme.breakpoints.down("sm")]: {
         fontSize: "1rem"
       }
     }
   }
-});
+}));
 
 export default function Footer() {
   const classes = useStyles();

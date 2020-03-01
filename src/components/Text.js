@@ -21,7 +21,7 @@ const useStyles = makeStyles(theme => ({
     "& span": {
       fontSize: "2.4rem",
       color: "#fff8f0",
-      ["@media (max-width: 600px)"]: {
+      [theme.breakpoints.down("sm")]: {
         fontSize: "1.1rem"
       }
     }
@@ -33,20 +33,20 @@ const useStyles = makeStyles(theme => ({
     alignItems: "center",
     flexDirection: "column",
     borderRadius: "5rem",
-    ["@media (max-width: 1280px)"]: {
+    [theme.breakpoints.down("lg")]: {
       flexDirection: "column"
     },
-    ["@media (max-width: 600px)"]: {
+    [theme.breakpoints.down("sm")]: {
       fontSize: "1rem"
     },
     // "& h4": {
     //   fontSize: "1.4rem"
     // },
     "& p": {
-      ["@media (max-width: 960px)"]: {
+      [theme.breakpoints.down("md")]: {
         fontSize: "0.9rem"
       },
-      ["@media (max-width: 600px)"]: {
+      [theme.breakpoints.down("sm")]: {
         fontSize: "0.6rem"
       }
     }

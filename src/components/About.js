@@ -2,7 +2,7 @@ import React from "react";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   about: {
     marginTop: "3%",
     backgroundImage: "linear-gradient(#2f2f31, #990000)",
@@ -16,17 +16,17 @@ const useStyles = makeStyles({
       textShadow: "0.1rem 0.1rem #53131e",
       fontSize: "2rem",
       marginBottom: "1.5rem",
-      ["@media (max-width: 600px)"]: {
+      [theme.breakpoints.down("sm")]: {
         fontSize: "1.5rem"
       }
     },
     "& p": {
-      ["@media (max-width: 600px)"]: {
+      [theme.breakpoints.down("sm")]: {
         fontSize: "0.8rem"
       }
     }
   }
-});
+}));
 
 export default function About() {
   const classes = useStyles();

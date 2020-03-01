@@ -3,7 +3,7 @@ import Social from "./Social";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   media: {
     paddingTop: "1rem",
     backgroundColor: "#990000",
@@ -15,11 +15,11 @@ const useStyles = makeStyles({
       fontSize: "2rem",
       marginBottom: "1.5rem"
     },
-    ["@media (max-width: 600px)"]: {
+    [theme.breakpoints.down("sm")]: {
       fontSize: "1.5rem"
     }
   }
-});
+}));
 
 export default function Media() {
   const classes = useStyles();

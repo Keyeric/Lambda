@@ -3,7 +3,7 @@ import Text from "./Text";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   blog: {
     backgroundColor: "#990000",
     borderTop: "0.3rem solid black",
@@ -23,12 +23,12 @@ const useStyles = makeStyles({
       textShadow: "0.1rem 0.1rem #53131e",
       fontSize: "2rem",
       marginBottom: "1.5rem",
-      ["@media (max-width: 600px)"]: {
+      [theme.breakpoints.down("sm")]: {
         fontSize: "1.5rem"
       }
     }
   }
-});
+}));
 
 export default function Blog() {
   const classes = useStyles();
