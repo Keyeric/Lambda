@@ -37,6 +37,8 @@ const useStyles = makeStyles({
   },
   icons: {
     display: "none",
+    margin: "auto",
+    padding: "auto",
     ["@media (max-width: 600px)"]: {
       display: "flex",
       flexDirection: "row",
@@ -46,24 +48,28 @@ const useStyles = makeStyles({
       ["@media (max-width: 600px)"]: {
         maxWidth: "100%",
         width: "50%",
-        margin: "1.5rem 1.5rem"
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center"
       },
-      "& a": {
-        textDecoration: "none",
-        color: "black",
-        textShadow: "0.05rem 0.05rem #fff8f0",
-        fontSize: "3rem",
-        margin: "auto",
+      "& div": {
         ["@media (max-width: 600px)"]: {
           maxWidth: "100%",
-          fontSize: "3rem",
-          //⬇DOUBLE CHECK THIS LATER
-          padding: "0.1rem",
-          //⬆DOUBLE CHECK THIS LATER
-          margin: "0"
+          width: "50%",
+          margin: "1.5rem 1rem"
         },
-        "& span": {
-          display: "none"
+        "& a": {
+          textDecoration: "none",
+          color: "black",
+          textShadow: "0.05rem 0.05rem #fff8f0",
+          fontSize: "3rem",
+          ["@media (max-width: 600px)"]: {
+            maxWidth: "100%",
+            fontSize: "3rem"
+          },
+          "& span": {
+            display: "none"
+          }
         }
       }
     }
