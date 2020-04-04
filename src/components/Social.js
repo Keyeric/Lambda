@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   social: {
     display: "flex",
     justifyContent: "space-around",
@@ -10,20 +10,20 @@ const useStyles = makeStyles(theme => ({
     padding: "auto",
     [theme.breakpoints.down("lg")]: {
       flexDirection: "column",
-      justifyContent: "space-around"
+      justifyContent: "space-around",
     },
     [theme.breakpoints.down("sm")]: {
-      display: "none"
+      display: "none",
     },
     "& div": {
       margin: "0.5rem 0",
       [theme.breakpoints.down("lg")]: {
-        fontSize: "1.5rem"
-      }
+        fontSize: "1.5rem",
+      },
     },
     "& a": {
       textDecoration: "none",
-      color: "black",
+      color: theme.status.black,
       textShadow: "0.05rem 0.05rem #fff8f0",
       fontSize: "3rem",
       margin: "auto",
@@ -31,9 +31,9 @@ const useStyles = makeStyles(theme => ({
         padding: "-3rem",
         fontSize: "2.3rem",
         marginLeft: "0",
-        marginRight: "0"
-      }
-    }
+        marginRight: "0",
+      },
+    },
   },
   icons: {
     display: "none",
@@ -42,7 +42,7 @@ const useStyles = makeStyles(theme => ({
     [theme.breakpoints.down("sm")]: {
       display: "flex",
       flexDirection: "row",
-      maxWidth: "100%"
+      maxWidth: "100%",
     },
     "& div": {
       [theme.breakpoints.down("sm")]: {
@@ -50,30 +50,30 @@ const useStyles = makeStyles(theme => ({
         width: "50%",
         display: "flex",
         flexDirection: "column",
-        alignItems: "center"
+        alignItems: "center",
       },
       "& div": {
         [theme.breakpoints.down("sm")]: {
           maxWidth: "100%",
           width: "50%",
-          margin: "1.5rem 1rem"
+          margin: "1.5rem 1rem",
         },
         "& a": {
           textDecoration: "none",
-          color: "black",
+          color: theme.status.black,
           textShadow: "0.05rem 0.05rem #fff8f0",
           fontSize: "3rem",
           [theme.breakpoints.down("sm")]: {
             maxWidth: "100%",
-            fontSize: "3rem"
+            fontSize: "3rem",
           },
           "& span": {
-            display: "none"
-          }
-        }
-      }
-    }
-  }
+            display: "none",
+          },
+        },
+      },
+    },
+  },
 }));
 
 export default function Social() {

@@ -1,22 +1,22 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   address: {
     fontSize: "0.9rem",
     paddingTop: "1rem",
     backgroundImage: "linear-gradient(#990000, #2f2f31)",
     "& a": {
       textDecoration: "none",
-      color: "black",
+      color: theme.status.black,
       [theme.breakpoints.down("lg")]: {
-        fontSize: "1.2rem"
+        fontSize: "1.2rem",
       },
       [theme.breakpoints.down("sm")]: {
-        fontSize: "1rem"
-      }
-    }
-  }
+        fontSize: "1rem",
+      },
+    },
+  },
 }));
 
 export default function Footer() {

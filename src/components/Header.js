@@ -1,22 +1,22 @@
 import React from "react";
-import { Typography, useMediaQuery } from "@material-ui/core";
+import { Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   top: {
     textShadow: "0.1rem 0.1rem #990000",
     "& a": {
-      color: "white",
+      color: theme.status.white,
       textDecoration: "none",
       fontSize: "4rem",
       [theme.breakpoints.down("md")]: {
-        fontSize: "3.5rem"
+        fontSize: "3.5rem",
       },
       [theme.breakpoints.down("sm")]: {
-        fontSize: "3rem"
-      }
-    }
-  }
+        fontSize: "3rem",
+      },
+    },
+  },
 }));
 
 export default function Header() {

@@ -2,12 +2,12 @@ import React from "react";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   lesson: {
-    color: "#e48400",
+    color: theme.status.orange,
     textShadow: "0.03rem 0.03rem #fff8f0",
-    fontSize: "1.4rem"
-  }
+    fontSize: "1.4rem",
+  },
 }));
 
 export default function Lesson() {
