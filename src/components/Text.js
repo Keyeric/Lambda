@@ -7,60 +7,60 @@ import {
   Typography,
   CardMedia,
   Collapse,
-  IconButton
+  IconButton,
 } from "@material-ui/core";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { makeStyles } from "@material-ui/core/styles";
 import Lesson from "./Lesson";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   text: {
     maxWidth: "75%",
-    background: "black",
+    background: theme.status.black,
     padding: "3%",
     "& span": {
       fontSize: "2.4rem",
-      color: "#fff8f0",
-      ["@media (max-width: 600px)"]: {
-        fontSize: "1.1rem"
-      }
-    }
+      color: theme.status.white,
+      [theme.breakpoints.down("sm")]: {
+        fontSize: "1.1rem",
+      },
+    },
   },
   symphinity: {
-    color: "#fff8f0",
+    color: theme.status.white,
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
     flexDirection: "column",
     borderRadius: "5rem",
-    ["@media (max-width: 1280px)"]: {
-      flexDirection: "column"
+    [theme.breakpoints.down("lg")]: {
+      flexDirection: "column",
     },
-    ["@media (max-width: 600px)"]: {
-      fontSize: "1rem"
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "1rem",
     },
     // "& h4": {
     //   fontSize: "1.4rem"
     // },
     "& p": {
-      ["@media (max-width: 960px)"]: {
-        fontSize: "0.9rem"
+      [theme.breakpoints.down("md")]: {
+        fontSize: "0.9rem",
       },
-      ["@media (max-width: 600px)"]: {
-        fontSize: "0.6rem"
-      }
-    }
+      [theme.breakpoints.down("sm")]: {
+        fontSize: "0.6rem",
+      },
+    },
   },
   expand: {
     transform: "rotate(0deg)",
     marginLeft: "auto",
     transition: theme.transitions.create("transform", {
-      duration: theme.transitions.duration.shortest
-    })
+      duration: theme.transitions.duration.shortest,
+    }),
   },
   expandOpen: {
-    transform: "rotate(180deg)"
-  }
+    transform: "rotate(180deg)",
+  },
 }));
 
 export default function Text() {
@@ -90,6 +90,16 @@ export default function Text() {
           Future blog posts will be posted to Medium and then linked here.
         </Typography>
       </CardContent>
+      <IconButton
+        className={clsx(classes.expand, {
+          [classes.expandOpen]: expanded,
+        })}
+        onClick={handleExpandClick}
+        aria-expanded={expanded}
+        aria-label="show more"
+      >
+        <ExpandMoreIcon />
+      </IconButton>
 
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent className={classes.symphinity}>
@@ -143,7 +153,7 @@ export default function Text() {
       </Collapse>
       <IconButton
         className={clsx(classes.expand, {
-          [classes.expandOpen]: expanded
+          [classes.expandOpen]: expanded,
         })}
         onClick={handleExpandClick}
         aria-expanded={expanded}

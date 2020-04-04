@@ -1,80 +1,80 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   social: {
     display: "flex",
     justifyContent: "space-around",
     flexDirection: "row",
     margin: "auto",
     padding: "auto",
-    ["@media (max-width: 1280px)"]: {
+    [theme.breakpoints.down("lg")]: {
       flexDirection: "column",
-      justifyContent: "space-around"
+      justifyContent: "space-around",
     },
-    ["@media (max-width: 600px)"]: {
-      display: "none"
+    [theme.breakpoints.down("sm")]: {
+      display: "none",
     },
     "& div": {
       margin: "0.5rem 0",
-      ["@media (max-width: 1280px)"]: {
-        fontSize: "1.5rem"
-      }
+      [theme.breakpoints.down("lg")]: {
+        fontSize: "1.5rem",
+      },
     },
     "& a": {
       textDecoration: "none",
-      color: "black",
+      color: theme.status.black,
       textShadow: "0.05rem 0.05rem #fff8f0",
       fontSize: "3rem",
       margin: "auto",
-      ["@media (max-width: 600px)"]: {
+      [theme.breakpoints.down("sm")]: {
         padding: "-3rem",
         fontSize: "2.3rem",
         marginLeft: "0",
-        marginRight: "0"
-      }
-    }
+        marginRight: "0",
+      },
+    },
   },
   icons: {
     display: "none",
     margin: "auto",
     padding: "auto",
-    ["@media (max-width: 600px)"]: {
+    [theme.breakpoints.down("sm")]: {
       display: "flex",
       flexDirection: "row",
-      maxWidth: "100%"
+      maxWidth: "100%",
     },
     "& div": {
-      ["@media (max-width: 600px)"]: {
+      [theme.breakpoints.down("sm")]: {
         maxWidth: "100%",
         width: "50%",
         display: "flex",
         flexDirection: "column",
-        alignItems: "center"
+        alignItems: "center",
       },
       "& div": {
-        ["@media (max-width: 600px)"]: {
+        [theme.breakpoints.down("sm")]: {
           maxWidth: "100%",
           width: "50%",
-          margin: "1.5rem 1rem"
+          margin: "1.5rem 1rem",
         },
         "& a": {
           textDecoration: "none",
-          color: "black",
+          color: theme.status.black,
           textShadow: "0.05rem 0.05rem #fff8f0",
           fontSize: "3rem",
-          ["@media (max-width: 600px)"]: {
+          [theme.breakpoints.down("sm")]: {
             maxWidth: "100%",
-            fontSize: "3rem"
+            fontSize: "3rem",
           },
           "& span": {
-            display: "none"
-          }
-        }
-      }
-    }
-  }
-});
+            display: "none",
+          },
+        },
+      },
+    },
+  },
+}));
 
 export default function Social() {
   const classes = useStyles();
