@@ -4,12 +4,10 @@ import About from "./components/About";
 import Blog from "./components/Blog";
 import Media from "./components/Media";
 import Footer from "./components/Footer";
-// import Nav from "./components/Nav";
-// import CustomCheckbox from "./utils/CustomCheckbox";
 
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Switch } from "react-router-dom";
 import "./index.css";
 
 const theme = createMuiTheme({
@@ -26,8 +24,6 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <Router>
-        {/* <CustomCheckbox />
-        <Nav /> */}
         <Header />
         <About />
         <Blog />
