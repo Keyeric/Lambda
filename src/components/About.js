@@ -34,10 +34,9 @@ export default function About() {
     <section className={classes.about}>
       <Typography variant="h2">About Me</Typography>
       <Typography variant="body1">
-        I am new to coding however i find it enjoyable and am eager to learn
-        more.
-        <br />I am currently enrolled in Lambda School and working on many
-        projects for my portfolio.
+        Python | React | Node | Javascript | Express | PostgreSQL | HTML | CSS
+        <br />I am currently enrolled in Lambda School improving my skills and
+        working on many projects for my portfolio.
       </Typography>
     </section>
   );

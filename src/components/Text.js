@@ -86,8 +86,6 @@ export default function Text() {
           below), however I did not have a blog at the time, and when I created
           one, it was a bit late to write in the same manner that I would've
           preferred to.
-          <br />
-          Future blog posts will be posted to Medium and then linked here.
         </Typography>
       </CardContent>
       <IconButton

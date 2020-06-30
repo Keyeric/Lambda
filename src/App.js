@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 
-import { BrowserRouter as Router, Switch } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import "./index.css";
 
 const theme = createMuiTheme({

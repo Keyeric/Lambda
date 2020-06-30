@@ -1,5 +1,7 @@
 import React from "react";
 import Text from "./Text";
+import BW4 from "./Bw4.js";
+import Game from "./Game.js";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -37,6 +39,10 @@ export default function Blog() {
       <br />
       <Typography variant="h2">Projects</Typography>
       <Text />
+      <br />
+      <BW4 />
+      <br />
+      <Game />
     </div>
   );
 }
