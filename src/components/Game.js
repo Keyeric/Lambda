@@ -86,13 +86,7 @@ export default function Game() {
 
       <CardContent className={classes.game}>
         <Typography variant="body1">
-          <span role="img" aria-label="Up Arrow">
-            ⬆️
-          </span>
-          This is a picture of the rules of John Conway's Game of Life.
-          <span role="img" aria-label="Up Arrow">
-            ⬆️
-          </span>
+          The above is a picture of the rules of John Conway's Game of Life.
           <br />
           Or at least my version of it, for the first Build Week of Lambda's
           Computer Science portion, aka
