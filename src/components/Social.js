@@ -84,7 +84,7 @@ export default function Social() {
         {/* GitHub here */}
         <div>
           <a
-            href="https://github.com/Keyeric?tab=repositories"
+            href="https://github.com/Keyeric"
             target="_blank"
             rel="noopener noreferrer"
             className="fab fa-github-square"
