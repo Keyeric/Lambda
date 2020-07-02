@@ -98,7 +98,7 @@ export default function Game() {
             color="primary"
             variant="body1"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
           >
             Click to Demo
           </Link>

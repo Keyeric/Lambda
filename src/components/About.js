@@ -1,6 +1,7 @@
 import React from "react";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
+import { Link } from "@material-ui/core/";
 
 const useStyles = makeStyles((theme) => ({
   about: {
@@ -37,6 +38,16 @@ export default function About() {
         Python | React | Node | Javascript | Express | PostgreSQL | HTML | CSS
         <br />I am currently enrolled in Lambda School improving my skills and
         working on many projects for my portfolio.
+        <br />
+        <Link
+          href="https://docs.google.com/document/d/1wsxJgqMLtkQ-FN3zoMStTnE_qGxMPUNMV0cnQEa8nJ4/edit?usp=sharing"
+          color="primary"
+          variant="h6"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Link to my Resume
+        </Link>
       </Typography>
     </section>
   );
