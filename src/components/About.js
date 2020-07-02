@@ -36,9 +36,15 @@ export default function About() {
       <Typography variant="h2">About Me</Typography>
       <Typography variant="body1">
         Python | React | Node | Javascript | Express | PostgreSQL | HTML | CSS
-        <br />I am currently enrolled in Lambda School improving my skills and
-        working on many projects for my portfolio.
         <br />
+      </Typography>
+      <br />
+      <Typography variant="body1">
+        I am currently enrolled in Lambda School improving my skills and working
+        on many projects for my portfolio.
+      </Typography>
+      <br />
+      <Typography variant="body1">
         <Link
           href="https://docs.google.com/document/d/1wsxJgqMLtkQ-FN3zoMStTnE_qGxMPUNMV0cnQEa8nJ4/edit?usp=sharing"
           color="primary"
