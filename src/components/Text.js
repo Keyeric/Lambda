@@ -82,10 +82,10 @@ export default function Text() {
       </CardMedia>
       <CardContent className={classes.symphinity}>
         <Typography variant="body1">
-          I originally wanted to write this on a blog (Medium account linked
-          below), however I did not have a blog at the time, and when I created
-          one, it was a bit late to write in the same manner that I would've
-          preferred to.
+          For my first build week I was tasked with creating an about page from
+          scratch for the "Spotify Song Suggester" project.
+          <br />
+          Let's talk about it.
         </Typography>
       </CardContent>
       <IconButton
@@ -102,10 +102,17 @@ export default function Text() {
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent className={classes.symphinity}>
           <Typography variant="body1">
-            For my first build week I was tasked with creating an about page
-            from scratch for the "Spotify Song Suggester" project. At first I
-            had significant difficulty with this request due to not having a
-            design file or example. However all my troubles were all in my head.
+            I originally wanted to write this on a blog however I did not have a
+            blog at the time, and when I created one, it was a bit late to write
+            in the same manner that I would've preferred to.
+            <br />
+            But the Build Week...
+          </Typography>
+          <br />
+          <Typography variant="body1">
+            At first I had significant difficulty with this request due to not
+            having a design file or example. However all my troubles were all in
+            my head.
           </Typography>
           <br />
           <Typography variant="body1">

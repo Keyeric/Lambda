@@ -120,12 +120,12 @@ export default function Social() {
         {/* Medium here */}
         <div>
           <a
-            href="https://medium.com/@keyeric"
+            href="https://twitter.com/KeyericB"
             target="_blank"
             rel="noopener noreferrer"
-            className="fab fa-medium"
+            className="fab fa-twitter"
           >
-            edium
+            Twitter
           </a>
         </div>
       </section>
